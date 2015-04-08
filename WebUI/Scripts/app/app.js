@@ -8,13 +8,17 @@ dentalApp.config(['$routeProvider',
   function ($routeProvider) {
       $routeProvider.
         when('/phones', {
-            templateUrl: 'partials/phone-list.html',
+            templateUrl: '/Templates/Contact/ContactUs.html',
             controller: 'PhoneListCtrl'
         }).
         when('/phones/:phoneId', {
-            templateUrl: 'partials/phone-detail.html',
+            templateUrl: '/Templates/AboutUs/AboutUs.html',
             controller: 'PhoneDetailCtrl'
         }).
+          when('/About', {
+              templateUrl: '/Templates/AboutUs/AboutUs.html'
+             
+          }).
         otherwise({
             redirectTo: '/phones'
         });
