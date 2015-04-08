@@ -4,3 +4,9 @@ C:\Projects\GitHub\MyPractise\WebUI\bin\WebUI.pdb
 C:\Projects\GitHub\MyPractise\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
 C:\Projects\GitHub\MyPractise\WebUI\obj\Debug\WebUI.dll
 C:\Projects\GitHub\MyPractise\WebUI\obj\Debug\WebUI.pdb
+C:\Projects\GitHub\Practise\WebUI\bin\WebUI.dll.config
+C:\Projects\GitHub\Practise\WebUI\bin\WebUI.dll
+C:\Projects\GitHub\Practise\WebUI\bin\WebUI.pdb
+C:\Projects\GitHub\Practise\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
+C:\Projects\GitHub\Practise\WebUI\obj\Debug\WebUI.dll
+C:\Projects\GitHub\Practise\WebUI\obj\Debug\WebUI.pdb
