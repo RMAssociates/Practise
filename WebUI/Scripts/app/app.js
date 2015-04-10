@@ -7,9 +7,12 @@ var dentalApp = angular.module('dentalApp', [
 dentalApp.config(['$routeProvider',
   function ($routeProvider) {
       $routeProvider.
-        when('/phones', {
-            templateUrl: '/Templates/Contact/ContactUs.html',
-            controller: 'PhoneListCtrl'
+        when('/main', {
+            templateUrl: '/Templates/home/main.html'            
+        }).
+        when('/404', {
+            templateUrl: '/Templates/home/404.html'
+            
         }).
         when('/phones/:phoneId', {
             templateUrl: '/Templates/AboutUs/AboutUs.html',
@@ -20,6 +23,6 @@ dentalApp.config(['$routeProvider',
              
           }).
         otherwise({
-            redirectTo: '/phones'
+            redirectTo: '/404'
         });
   }]);
