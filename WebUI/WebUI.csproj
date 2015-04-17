@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Bootstrap\bootstrap-3.3.4-dist\css\animate.css" />
     <Content Include="Content\Bootstrap\bootstrap-3.3.4-dist\css\bootstrap-theme.css" />
     <Content Include="Content\Bootstrap\bootstrap-3.3.4-dist\css\bootstrap-theme.min.css" />
     <Content Include="Content\Bootstrap\bootstrap-3.3.4-dist\css\bootstrap.css" />
@@ -65,7 +66,14 @@
     <Content Include="Content\Bootstrap\bootstrap-3.3.4-dist\js\bootstrap.js" />
     <Content Include="Content\Bootstrap\bootstrap-3.3.4-dist\js\bootstrap.min.js" />
     <Content Include="Content\Bootstrap\bootstrap-3.3.4-dist\js\npm.js" />
+    <Content Include="Images\firstaid.png" />
+    <Content Include="Images\icons\dentalchair.ico" />
+    <Content Include="Images\lab.png" />
+    <Content Include="Images\LEED.jpg" />
+    <Content Include="Images\lifeline.png" />
     <Content Include="Images\Logo.jpg" />
+    <Content Include="Images\notes.png" />
+    <Content Include="Images\tool.png" />
     <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.js" />
     <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.min.js" />
     <Content Include="Scripts\angular-ui\ui-bootstrap.js" />
