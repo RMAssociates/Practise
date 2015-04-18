@@ -30,3 +30,32 @@ dentalControllers.controller('CarouselDemoCtrl', function ($scope) {
         $scope.addSlide();
     }
 });
+
+
+dentalControllers.controller('ContactUsCntrl', ['$scope','$http',
+  function ($scope, $http) {
+
+      $scope.Welcome = 'Hello Naveen welcome to the Angular World';
+
+      var model = {};
+      model.firstName = 'Abdul';
+      model.lastName = 'Kalam';
+      model.phone = '9909909000';
+      model.email = 'Abdul@aaa.ccc';
+
+      $scope.model = model;
+
+      $scope.Click = click;
+
+      function click() {
+
+          $http.post("http://localhost:6172/api/values", $scope.model).success(function (data) {
+              console.log(data);
+          })
+          .error(function (error) {
+              console.log(data);
+          })
+
+      }
+
+  }]);
