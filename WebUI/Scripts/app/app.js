@@ -16,11 +16,11 @@ function ($routeProvider,$httpProvider) {
 
       $routeProvider.
         when('/main', {
-            templateUrl: '/Templates/home/main.html'            
+            templateUrl: '/Templates/home/main.html'
         }).
         when('/404', {
             templateUrl: '/Templates/home/404.html'
-            
+
         }).
         when('/phones/:phoneId', {
             templateUrl: '/Templates/AboutUs/AboutUs.html',
@@ -32,7 +32,11 @@ function ($routeProvider,$httpProvider) {
           }).
           when('/about', {
               templateUrl: '/Templates/AboutUs/AboutUs.html'
-             
+
+          }).
+          when('/RequestAppointment', {
+              templateUrl: '/Templates/Appointment/RequestAppointment.html'
+
           }).
         otherwise({
             redirectTo: '/404'

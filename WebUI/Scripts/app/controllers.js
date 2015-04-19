@@ -32,7 +32,7 @@ dentalControllers.controller('CarouselDemoCtrl', function ($scope) {
 });
 
 
-dentalControllers.controller('ContactUsCntrl', ['$scope','$http',
+dentalControllers.controller('ContactUsCntrl', ['$scope', '$http',
   function ($scope, $http) {
 
       $scope.Welcome = 'Hello Naveen welcome to the Angular World';
@@ -44,6 +44,36 @@ dentalControllers.controller('ContactUsCntrl', ['$scope','$http',
       model.email = 'Abdul@aaa.ccc';
 
       $scope.model = model;
+
+      $scope.Click = click;
+
+      function click() {
+
+          $http.post("http://localhost:6172/api/values", $scope.model).success(function (data) {
+              console.log(data);
+          })
+          .error(function (error) {
+              console.log(data);
+          })
+
+      }
+
+  }]);
+
+dentalControllers.controller('AppointmentController', ['$scope', '$http',
+  function ($scope, $http) {
+      $scope.model = {
+          firstName: '',
+          lastName: '',
+          phone: '',
+          email: '',
+          comments: '',
+          contactOptions: [
+              { name: 'Phone', value: 'Phone' },
+              { name: 'Email', value: 'Email' }
+          ],
+          contactOption: cocontactOptions[0]
+      };
 
       $scope.Click = click;
 

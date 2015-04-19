@@ -1,0 +1,108 @@
+﻿<div class="form-horizontal col-sm-10" ng-controller="AppointmentController">
+    <div class="form-group">
+        <label for="inputFirstName" class="col-sm-6 control-label">First Name</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" ng-model="model.firstName">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputLastName" class="col-sm-6 control-label">Last Name</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="inputLastName" placeholder="Last Name" ng-model="model.lastName">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPhone" class="col-sm-6 control-label">Phone</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="inputPhone" placeholder="Phone" ng-model="model.phone">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputEmail" class="col-sm-6 control-label">Email</label>
+        <div class="col-sm-6">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" ng-model="model.email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputComments" class="col-sm-6 control-label">Comments</label>
+        <div class="col-sm-6">
+            <textarea class="form-control" id="inputComments" placeholder="Comments" ng-model="model.comments"></textarea>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="inputPhoneSelect" class="col-sm-6 control-label">I prefer to be contacted by: </label>
+        <div class="col-sm-6">
+            <select class="form-control" data-header="Select One" id="inputPhoneSelect">
+                <option>Phone</option>
+                <option>Email</option>
+            </select>
+            <select ng-model="model.contactOption" ng-options="contactOption.name for contactOption in model.contactOptions">
+                <option value="">Select One</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="inputPatientTypeSelect" class="col-sm-6 control-label">Are you a new patient? </label>
+        <div class="col-sm-6">
+            <select class="form-control" data-header="Select One" id="inputPatientTypeSelect">
+                <option>Phone</option>
+                <option>Email</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="selectScheduleVisit" class="col-sm-6 control-label">I would like to schedule a visit: </label>
+        <div class="col-sm-6">
+            <select class="form-control" data-header="Select One" id="selectScheduleVisit">
+                <option>in 1 - 3 months</option>
+                <option>in 3 - 6 months</option>
+                <option>in 6 - 12 months</option>
+                <option>in 12 months+</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="selectTimeofVisit" class="col-sm-6 control-label">What time of day would you prefer? </label>
+        <div class="col-sm-6">
+            <select class="form-control" data-header="Select One" id="selectTimeofVisit">
+                <option>Morning</option>
+                <option>Mid-day</option>
+                <option>Afternoon</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="radioGroupDay" class="form-control-static col-sm-6 control-label">
+            What day of the week would you like to schedule your consultation (select all that apply)?
+        </label>
+        <div class="col-sm-6 checkbox" id="radioGroupDay">
+            <label>
+                <input type="checkbox" value="Monday">Monday
+            </label>
+            <label>
+                <input type="checkbox" value="Tuesday">Tuesday
+            </label>
+            <label>
+                <input type="checkbox" value="Wednesday">Wednesday
+            </label>
+            <label>
+                <input type="checkbox" value="Thursday">Thursday
+            </label>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-6 col-sm-6">
+                <button type="submit" class="btn btn-primary">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-sm-2">
+
+</div>
