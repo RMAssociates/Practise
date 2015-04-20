@@ -30,50 +30,31 @@
         </div>
     </div>
 
-
     <div class="form-group">
         <label for="inputPhoneSelect" class="col-sm-6 control-label">I prefer to be contacted by: </label>
         <div class="col-sm-6">
-            <select class="form-control" data-header="Select One" id="inputPhoneSelect">
-                <option>Phone</option>
-                <option>Email</option>
-            </select>
-            <select ng-model="model.contactOption" ng-options="contactOption.name for contactOption in model.contactOptions">
-                <option value="">Select One</option>
-            </select>
+            <select class="form-control" ng-model="model.sContactOption" ng-options="contactOption.name for contactOption in model.contactOptions"></select>
         </div>
     </div>
 
     <div class="form-group">
         <label for="inputPatientTypeSelect" class="col-sm-6 control-label">Are you a new patient? </label>
         <div class="col-sm-6">
-            <select class="form-control" data-header="Select One" id="inputPatientTypeSelect">
-                <option>Phone</option>
-                <option>Email</option>
-            </select>
+            <select class="form-control" ng-model="model.sPatientType" ng-options="patientType.name for patientType in model.patientTypes"></select>
         </div>
     </div>
 
     <div class="form-group">
         <label for="selectScheduleVisit" class="col-sm-6 control-label">I would like to schedule a visit: </label>
         <div class="col-sm-6">
-            <select class="form-control" data-header="Select One" id="selectScheduleVisit">
-                <option>in 1 - 3 months</option>
-                <option>in 3 - 6 months</option>
-                <option>in 6 - 12 months</option>
-                <option>in 12 months+</option>
-            </select>
+            <select class="form-control" ng-model="model.sVisit" ng-options="visit.name for visit in model.visits"></select>
         </div>
     </div>
 
     <div class="form-group">
         <label for="selectTimeofVisit" class="col-sm-6 control-label">What time of day would you prefer? </label>
         <div class="col-sm-6">
-            <select class="form-control" data-header="Select One" id="selectTimeofVisit">
-                <option>Morning</option>
-                <option>Mid-day</option>
-                <option>Afternoon</option>
-            </select>
+            <select class="form-control" ng-model="model.sVisitTime" ng-options="visitTime.name for visitTime in model.visitTimings"></select>
         </div>
     </div>
 
@@ -81,27 +62,17 @@
         <label for="radioGroupDay" class="form-control-static col-sm-6 control-label">
             What day of the week would you like to schedule your consultation (select all that apply)?
         </label>
-        <div class="col-sm-6 checkbox" id="radioGroupDay">
+        <div class="col-sm-offset-6 checkbox" id="radioGroupDay" ng-repeat="visitDay in model.visitDays">
             <label>
-                <input type="checkbox" value="Monday">Monday
+                <input type="checkbox" value="{{visitDay.name}}">{{visitDay.name}}
             </label>
-            <label>
-                <input type="checkbox" value="Tuesday">Tuesday
-            </label>
-            <label>
-                <input type="checkbox" value="Wednesday">Wednesday
-            </label>
-            <label>
-                <input type="checkbox" value="Thursday">Thursday
-            </label>
-        </div>
-
-        <div class="form-group">
-            <div class="col-sm-offset-6 col-sm-6">
-                <button type="submit" class="btn btn-primary">SUBMIT</button>
-            </div>
-        </div>
+        </div>        
     </div>
+    <div class="form-group">
+        <div class="col-sm-offset-6 col-sm-6">
+            <button type="submit" class="btn btn-primary">SUBMIT</button>
+        </div>
+    </div>   
 </div>
 <div class="col-sm-2">
 
