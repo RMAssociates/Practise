@@ -24,6 +24,8 @@ namespace Dental.WebAPI.Controllers
         // POST api/values
         public void Post([FromBody]string value)
         {
+
+            var test = value;
         }
 
         // PUT api/values/5

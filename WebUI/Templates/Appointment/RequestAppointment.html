@@ -1,0 +1,79 @@
+﻿<div class="form-horizontal col-sm-10" ng-controller="AppointmentController">
+    <div class="form-group">
+        <label for="inputFirstName" class="col-sm-6 control-label">First Name</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" ng-model="model.firstName">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputLastName" class="col-sm-6 control-label">Last Name</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="inputLastName" placeholder="Last Name" ng-model="model.lastName">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPhone" class="col-sm-6 control-label">Phone</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="inputPhone" placeholder="Phone" ng-model="model.phone">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputEmail" class="col-sm-6 control-label">Email</label>
+        <div class="col-sm-6">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" ng-model="model.email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputComments" class="col-sm-6 control-label">Comments</label>
+        <div class="col-sm-6">
+            <textarea class="form-control" id="inputComments" placeholder="Comments" ng-model="model.comments"></textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="inputPhoneSelect" class="col-sm-6 control-label">I prefer to be contacted by: </label>
+        <div class="col-sm-6">
+            <select class="form-control" ng-model="model.sContactOption" ng-options="contactOption.name for contactOption in model.contactOptions"></select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="inputPatientTypeSelect" class="col-sm-6 control-label">Are you a new patient? </label>
+        <div class="col-sm-6">
+            <select class="form-control" ng-model="model.sPatientType" ng-options="patientType.name for patientType in model.patientTypes"></select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="selectScheduleVisit" class="col-sm-6 control-label">I would like to schedule a visit: </label>
+        <div class="col-sm-6">
+            <select class="form-control" ng-model="model.sVisit" ng-options="visit.name for visit in model.visits"></select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="selectTimeofVisit" class="col-sm-6 control-label">What time of day would you prefer? </label>
+        <div class="col-sm-6">
+            <select class="form-control" ng-model="model.sVisitTime" ng-options="visitTime.name for visitTime in model.visitTimings"></select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="radioGroupDay" class="form-control-static col-sm-6 control-label">
+            What day of the week would you like to schedule your consultation (select all that apply)?
+        </label>
+        <div class="col-sm-offset-6 checkbox" id="radioGroupDay" ng-repeat="visitDay in model.visitDays">
+            <label>
+                <input type="checkbox" value="{{visitDay.name}}">{{visitDay.name}}
+            </label>
+        </div>        
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-6 col-sm-6">
+            <button type="submit" class="btn btn-primary">SUBMIT</button>
+        </div>
+    </div>   
+</div>
+<div class="col-sm-2">
+
+</div>
