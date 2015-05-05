@@ -21,7 +21,7 @@ dentalControllers.controller('CarouselDemoCtrl', function ($scope) {
     $scope.addSlide = function () {
         var newWidth = 600 + slides.length + 1;
         slides.push({
-            image: 'http://placekitten.com/' + newWidth + '/300',
+            image: 'http://localhost:6759/Images/examining.jpg',
             text: ['More', 'Extra', 'Lots of', 'Surplus'][slides.length % 4] + ' ' +
               ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
         });
