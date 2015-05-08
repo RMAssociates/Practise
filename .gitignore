@@ -1,0 +1,7 @@
+*.suo
+*.dll
+WebUI/bin/WebUI.dll.config
+*.pdb
+WebUI/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+*.cache
+WebUI/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
