@@ -66,7 +66,14 @@
     <Content Include="Content\Bootstrap\bootstrap-3.3.4-dist\js\bootstrap.js" />
     <Content Include="Content\Bootstrap\bootstrap-3.3.4-dist\js\bootstrap.min.js" />
     <Content Include="Content\Bootstrap\bootstrap-3.3.4-dist\js\npm.js" />
+    <Content Include="Images\braces.jpg" />
+    <Content Include="Images\braces2.jpg" />
+    <Content Include="Images\dentist-s-instruments.jpg" />
+    <Content Include="Images\dentist-s-instruments2.jpg" />
+    <Content Include="Images\dentist-s-instruments3.jpg" />
     <Content Include="Images\examining.jpg" />
+    <Content Include="Images\family.jpg" />
+    <Content Include="Images\family2.jpg" />
     <Content Include="Images\firstaid.png" />
     <Content Include="Images\icons\dentalchair.ico" />
     <Content Include="Images\lab.png" />
@@ -75,7 +82,9 @@
     <Content Include="Images\Logo.jpg" />
     <Content Include="Images\notes.png" />
     <Content Include="Images\people.png" />
+    <Content Include="Images\Preventive-2.jpg" />
     <Content Include="Images\tool.png" />
+    <Content Include="Images\Whitening.jpg" />
     <Content Include="Scripts\addon\calendar.js" />
     <Content Include="Scripts\addon\uiCss.js" />
     <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.js" />

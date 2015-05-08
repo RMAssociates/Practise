@@ -23,13 +23,26 @@ dentalControllers.controller('CarouselDemoCtrl', function ($scope) {
         var newWidth = 600 + slides.length + 1;
         slides.push({
             image: 'http://localhost:6759/Images/examining.jpg',
-            text: ['More', 'Extra', 'Lots of', 'Surplus'][slides.length % 4] + ' ' +
-              ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
+            text: 'Doctor Examining a Patient'
+        
+        });
+        slides.push({
+            image: 'http://localhost:6759/Images/Whitening.jpg',
+            text: 'Doctor Examining a Patient'
+
+        });
+        slides.push({
+            image: 'http://localhost:6759/Images/family.jpg',
+            text: 'Doctor Examining a Patient'
+
         });
     };
-    for (var i = 0; i < 4; i++) {
-        $scope.addSlide();
-    }
+
+    //for (var i = 0; i < 4; i++) {
+    //    $scope.addSlide();
+    //}
+
+    $scope.addSlide();
 });
 
 

@@ -43,10 +43,10 @@
     <div style="height: 350px">
         <carousel interval="myInterval">
             <slide ng-repeat="slide in slides" active="slide.active">
-                <img ng-src="{{slide.image}}" style="margin:auto;">
+                <img ng-src="{{slide.image}}" style="height:350px;margin:auto">
                 <div class="carousel-caption">
                     <h4>Slide {{$index}}</h4>
-                    <p>{{slide.text}}</p>
+                    <p class="text-info pull-left">{{slide.text}}</p>
                 </div>
             </slide>
         </carousel>
