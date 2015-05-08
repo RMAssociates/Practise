@@ -18,6 +18,7 @@ dentalControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams',
 dentalControllers.controller('CarouselDemoCtrl', function ($scope) {
     $scope.myInterval = 3000;
     var slides = $scope.slides = [];
+
     $scope.addSlide = function () {
         var newWidth = 600 + slides.length + 1;
         slides.push({
