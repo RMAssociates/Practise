@@ -36,13 +36,13 @@ dentalControllers.controller('CarouselDemoCtrl', function ($scope) {
 dentalControllers.controller('ContactUsCntrl', ['$scope', '$http',
   function ($scope, $http) {
 
-      $scope.Welcome = 'Hello Naveen welcome to the Angular World';
+      
 
       var model = {};
-      model.firstName = 'Abdul';
-      model.lastName = 'Kalam';
-      model.phone = '9909909000';
-      model.email = 'Abdul@aaa.ccc';
+      //model.firstName = 'Abdul';
+      //model.lastName = 'Kalam';
+      //model.phone = '9909909000';
+      //model.email = 'Abdul@aaa.ccc';
 
       $scope.model = model;
 
