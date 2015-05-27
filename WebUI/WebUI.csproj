@@ -564,6 +564,25 @@
     <Content Include="Templates\Home\Main.html" />
     <Content Include="Templates\Home\NavBar.html" />
     <Content Include="Templates\Schedule\schedule.html" />
+    <Content Include="Templates\services\cosmeticdentistry.html" />
+    <Content Include="Templates\services\default.html" />
+    <Content Include="Templates\services\dentalbridges.html" />
+    <Content Include="Templates\services\dentalcrowns.html" />
+    <Content Include="Templates\services\dentures.html" />
+    <Content Include="Templates\services\endodontics.html" />
+    <Content Include="Templates\services\family.html" />
+    <Content Include="Templates\services\general.html" />
+    <Content Include="Templates\services\interceptiveorthodontics.html" />
+    <Content Include="Templates\services\invisalignbraces.html" />
+    <Content Include="Templates\services\oralsurgery.html" />
+    <Content Include="Templates\services\pediatric.html" />
+    <Content Include="Templates\services\periodontics.html" />
+    <Content Include="Templates\services\preventive.html" />
+    <Content Include="Templates\services\restorative.html" />
+    <Content Include="Templates\services\sedation.html" />
+    <Content Include="Templates\services\sleepdisorder.html" />
+    <Content Include="Templates\services\teethwhitening.html" />
+    <Content Include="Templates\services\tmjandtmd.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
