@@ -1,7 +1,7 @@
 ﻿
 var dentalApp = angular.module('dentalApp', [
   'ngRoute','ui.bootstrap',
-  'dentalControllers', 'myCalendarApp'
+  'dentalControllers','dentalDirectives', 'myCalendarApp'
 ]);
 
 
@@ -78,6 +78,10 @@ function ($routeProvider,$httpProvider) {
               templateUrl: '/Templates/Appointment/RequestAppointment.html'
 
           }).
+           when('/services', {
+               templateUrl: '/Templates/services/default.html'
+
+           }).
         otherwise({
             redirectTo: '/404'
         });
