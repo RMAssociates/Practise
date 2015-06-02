@@ -559,13 +559,14 @@
     <Content Include="Scripts\bower_components\moment\templates\locale-header.js" />
     <Content Include="Scripts\bower_components\moment\templates\test-header.js" />
     <Content Include="Templates\AboutUs\AboutUs.html" />
-    <Content Include="Templates\Contact\ContactUs.html" />
+    <Content Include="Templates\contact\ContactUs.html" />
     <Content Include="Templates\Home\404.html" />
     <Content Include="Templates\Home\alerts.html" />
     <Content Include="Templates\Home\footer.html" />
     <Content Include="Templates\Home\Main.html" />
     <Content Include="Templates\Home\NavBar.html" />
-    <Content Include="Templates\Schedule\schedule.html" />
+    <Content Include="Templates\reviews\rateabiz.html" />
+    <Content Include="Templates\schedule\schedule.html" />
     <Content Include="Templates\services\cosmeticdentistry.html" />
     <Content Include="Templates\services\default.html" />
     <Content Include="Templates\services\dentalbridges.html" />
