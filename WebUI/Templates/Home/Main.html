@@ -1,7 +1,4 @@
-﻿
-
-
-<div class="container bg-info" ng-controller="CarouselDemoCtrl">
+﻿<div class="container bg-info" ng-controller="CarouselDemoCtrl">
     <div style="height: 350px">
         <carousel interval="myInterval">
             <slide ng-repeat="slide in slides" active="slide.active">
@@ -25,7 +22,7 @@
 
 </div>
 
-
+<div ng-include="'Templates/Home/welcome.html'"></div>
 <div ng-include="'Templates/reviews/testimonials.html'"></div>
 
 

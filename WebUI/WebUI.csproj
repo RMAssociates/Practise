@@ -566,6 +566,7 @@
     <Content Include="Templates\Home\footer.html" />
     <Content Include="Templates\Home\Main.html" />
     <Content Include="Templates\Home\NavBar.html" />
+    <Content Include="Templates\Home\welcome.html" />
     <Content Include="Templates\reviews\rateabiz.html" />
     <Content Include="Templates\reviews\testimonialdetails.html" />
     <Content Include="Templates\reviews\testimonials.html" />

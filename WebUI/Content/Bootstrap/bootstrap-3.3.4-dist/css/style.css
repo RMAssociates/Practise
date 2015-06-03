@@ -142,7 +142,7 @@ a {
     background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 60s infinite linear;
+    -webkit-animation: hue 20s infinite linear;
   }
 
 .site__content {
@@ -154,6 +154,14 @@ a {
     -webkit-animation: bounceInUp 1s;
     -webkit-animation-delay: .1s;
   }
+
+  .box_animated {
+    
+    background-color: lightslategray;    
+    -webkit-animation: hue 8s infinite linear;
+    animation-name: hue;
+    animation-duration: 8s;
+}
 
 /*-----------------------------------*\
   $ANIMATIONS
