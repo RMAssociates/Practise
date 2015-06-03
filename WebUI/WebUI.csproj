@@ -62,6 +62,7 @@
     <Content Include="Content\Bootstrap\bootstrap-3.3.4-dist\css\bootstrap-theme.min.css" />
     <Content Include="Content\Bootstrap\bootstrap-3.3.4-dist\css\bootstrap.css" />
     <Content Include="Content\Bootstrap\bootstrap-3.3.4-dist\css\bootstrap.min.css" />
+    <Content Include="Content\Bootstrap\bootstrap-3.3.4-dist\css\style.css" />
     <Content Include="Content\Bootstrap\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\Bootstrap\bootstrap-3.3.4-dist\js\bootstrap.js" />
     <Content Include="Content\Bootstrap\bootstrap-3.3.4-dist\js\bootstrap.min.js" />
@@ -566,6 +567,8 @@
     <Content Include="Templates\Home\Main.html" />
     <Content Include="Templates\Home\NavBar.html" />
     <Content Include="Templates\reviews\rateabiz.html" />
+    <Content Include="Templates\reviews\testimonialdetails.html" />
+    <Content Include="Templates\reviews\testimonials.html" />
     <Content Include="Templates\schedule\schedule.html" />
     <Content Include="Templates\services\cosmeticdentistry.html" />
     <Content Include="Templates\services\default.html" />

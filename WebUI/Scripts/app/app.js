@@ -83,6 +83,6 @@ function ($routeProvider,$httpProvider) {
 
            }).
         otherwise({
-            redirectTo: '/404'
+            redirectTo: '/main'
         });
   }]);

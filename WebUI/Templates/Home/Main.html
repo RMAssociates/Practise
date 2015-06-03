@@ -1,58 +1,33 @@
-﻿<!--<div class="container content">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-         <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol> <div class="carousel-inner">
-            <div class="item active">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="thumbnail adjust1">
-                            <div class="col-md-2 col-sm-2 col-xs-12">
-                                <img class="media-object img-rounded img-responsive" src="http://placehold.it/100">
-                            </div>
-                            <div class="col-md-10 col-sm-10 col-xs-12">
-                                <div class="caption"> <p class="text-info lead adjust2">I can't wait to test this out.</p> <p><span class="glyphicon glyphicon-thumbs-up"></span> This is a testimonial window. Feedback of user can be displayed here.</p> <blockquote class="adjust2"> <p>Abhijit Goswami</p> <small><cite title="Source Title"><i class="glyphicon glyphicon-globe"></i> www.example1.com</cite></small> </blockquote> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item"> 
-        <div class="row"> 
-                <div class="col-xs-12"> 
-            <div class="thumbnail adjust1"> 
-                    <div class="col-md-2 col-sm-2 col-xs-12"> <img class="media-object img-rounded img-responsive" src="http://placehold.it/100"> </div>
-                     <div class="col-md-10 col-sm-10 col-xs-12"> <div class="caption"> <p class="text-info lead adjust2">I can't wait to test this out.</p> 
-                         <p><span class="glyphicon glyphicon-thumbs-up"></span> This is a testimonial window. Feedback of user can be displayed here.</p> 
-                         <blockquote class="adjust2"> <p>Abhijit Goswami</p> <small><cite title="Source Title"><i class="glyphicon glyphicon-globe"></i> www.example2.com</cite></small> </blockquote> </div>
-                 </div>
-                     </div>
-             </div>
-                 </div>
-         </div>
-        
-         <div class="item"> <div class="row"> <div class="col-xs-12"> <div class="thumbnail adjust1"> <div class="col-md-2 col-sm-2 col-xs-12"> <img class="media-object img-rounded img-responsive" src="http://placehold.it/100"> </div> <div class="col-md-10 col-sm-10 col-xs-12"> <div class="caption"> <p class="text-info lead adjust2">I can't wait to test this out.</p> <p><span class="glyphicon glyphicon-thumbs-up"></span> This is a testimonial window. Feedback of user can be displayed here.</p> <blockquote class="adjust2"> <p>Abhijit Goswami</p> <small><cite title="Source Title"><i class="glyphicon glyphicon-globe"></i> www.example3.com</cite></small> </blockquote> </div> </div> </div> </div> </div> </div>
-        </div> <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a> <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
-    </div>
-</div>-->
+﻿
 
 
-<div class="container"  ng-controller="CarouselDemoCtrl">
+<div class="container bg-info" ng-controller="CarouselDemoCtrl">
     <div style="height: 350px">
         <carousel interval="myInterval">
             <slide ng-repeat="slide in slides" active="slide.active">
-                <img ng-src="{{slide.image}}" style="height:350px;margin:auto">
-                <div class="carousel-caption">
-                    <h4>Slide {{$index}}</h4>
-                    <p class="text-info pull-left">{{slide.text}}</p>
+                <div class="col-xs-5 ">
+                    <div class="well">
+                        <p class="">{{slide.text}}</p>
+                        <p> Intoduction Text</p>
+                    </div>
+                    <a class="btn btn-sm btn-success">More</a>
                 </div>
+                <div class="col-xs-7">
+                    <img ng-src="{{slide.image}}" style="height:350px;margin:auto">
+                    <div class="carousel-caption">
+                        <h4>{{slide.name}}</h4>
+                    </div>
+                </div>
+
             </slide>
         </carousel>
     </div>
 
 </div>
 
-<!--<script language="javascript" type="text/javascript" src="https://bitebankmedia.com/embed/get-code/8F7dfSQxy4jKTbYO5vW3OU9KhZAz7pnkmAWwG9GE7NyE6bsvCb93eYBFnYfRd2qC"></script>-->
+
+<div ng-include="'Templates/reviews/testimonials.html'"></div>
+
+
+<script language="javascript" type="text/javascript" src="https://bitebankmedia.com/embed/get-code/8F7dfSQxy4jKTbYO5vW3OU9KhZAz7pnkmAWwG9GE7NyE6bsvCb93eYBFnYfRd2qC"></script>
 
