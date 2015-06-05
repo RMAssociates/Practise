@@ -1,31 +1,50 @@
-﻿<div class="panel panel-success" ng-controller="ContactUsCntrl">
-    <div class="panel-heading"><h4>Contact Us</h4></div>
-    <div class="panel-body">
+﻿<div class="container">
+    <div class="panel panel-success" ng-controller="ContactUsCntrl">
+        <div class="panel-heading">
+            <h4>
+                We would love to hear from you!
+            </h4>
+        </div>
+        <div class="panel-body">
+            <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.233120862675!2d-79.3613513!3d43.7057042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4ccdcef63b299%3A0xaf7351d5cd81ffde!2s85+Laird+Dr%2C+Leaside+Village%2C+East+York%2C+ON+M4G+3T8!5e0!3m2!1sen!2sca!4v1433470482869" width="500" height="450" frameborder="0" style="border:0"></iframe>
+            </div>
+            <div class="col-md-6">
+                <br />
+                <p> Fill in the form below and send it to us for information or questions and we will assist you with your request. </p>
 
-        <p> Any questions or information required ? - Fill in the form below and send it to us someone will shortly assist you regarding your request. </p>
-
-        <div class="input-group">
-            <i class="input-group-addon glyphicon glyphicon-user"></i>
-            <input type="text" class="form-control" placeholder="FirstName" aria-describedby="basic-addon1" ng-model="model.firstName">
-            <input type="text" class="form-control" placeholder="LastName" aria-describedby="basic-addon1" ng-model="model.lastName">
+                <div class="input-group">
+                    <i class="input-group-addon glyphicon glyphicon-user"></i>
+                    <input type="text" class="form-control" placeholder="FirstName" aria-describedby="basic-addon1" ng-model="model.firstName">
+                    <input type="text" class="form-control" placeholder="LastName" aria-describedby="basic-addon1" ng-model="model.lastName">
+                </div>
+                <br />
+                <div class="input-group">
+                    <i class=" input-group-addon glyphicon glyphicon-phone-alt"></i>
+                    <input type="text" class="form-control" placeholder="Phone" aria-describedby="basic-addon1" ng-model="model.phone">
+                </div>
+                <br />
+                <div class="input-group">
+                    <i class=" input-group-addon glyphicon glyphicon-envelope"></i>
+                    <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1" ng-model="model.email">
+                </div>
+                <br />
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">@</span>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <br />
+                <a class="btn btn-md btn-success" ng-click="Click();">Send</a>
+            </div>
         </div>
-        <br />
-        <div class="input-group">
-            <i class=" input-group-addon glyphicon glyphicon-phone-alt"></i>
-            <input type="text" class="form-control" placeholder="Phone" aria-describedby="basic-addon1" ng-model="model.phone">
+    </div>
+    <div class="row">
+        <div class="well">
+            <ul>
+                <li>Great location with ample free parking</li>
+                <li>Our dental office is wheelchair accessible</li>
+                <li>Open on Saturday and Sunday</li>
+            </ul>
         </div>
-        <br />
-        <div class="input-group">
-            <i class=" input-group-addon glyphicon glyphicon-envelope"></i>
-            <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1" ng-model="model.email">
-        </div>
-        <br />
-        <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">@</span>
-            <textarea></textarea>
-        </div>
-        <br />
-
-        <a class="btn btn-lg btn-primary" ng-click="Click();">Save</a>
     </div>
 </div>

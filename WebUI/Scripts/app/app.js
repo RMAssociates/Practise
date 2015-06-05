@@ -82,6 +82,10 @@ function ($routeProvider,$httpProvider) {
                templateUrl: '/Templates/services/default.html'
 
            }).
+           when('/contactus', {
+               templateUrl: '/Templates/contact/contactUs.html'
+
+           }).
         otherwise({
             redirectTo: '/main'
         });

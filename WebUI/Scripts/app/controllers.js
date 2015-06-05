@@ -22,19 +22,19 @@ dentalControllers.controller('CarouselDemoCtrl', function ($scope) {
     $scope.addSlide = function () {
         var newWidth = 600 + slides.length + 1;
         slides.push({
-            image: 'http://localhost:6759/Images/examining.jpg',
+            image: '/Images/examining.jpg',
             text: 'Doctor Examining a Patient',
             name:'Preventive Checkups'
         
         });
         slides.push({
-            image: 'http://localhost:6759/Images/Whitening.jpg',
+            image: '/Images/Whitening.jpg',
             text: 'Improve your smile',
             name : 'Whitening'
 
         });
         slides.push({
-            image: 'http://localhost:6759/Images/family.jpg',
+            image: '/Images/family.jpg',
             text: 'Complete Family packages available...',
             name :'Family'
 
