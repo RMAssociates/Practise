@@ -1359,6 +1359,13 @@ a.text-success:hover {
 a.text-info:hover {
   color: #245269;
 }
+.text-white {
+  color: whitesmoke;
+}
+a.text-white:hover {
+  color: #3e8f3e;
+}
+
 .text-warning {
   color: #8a6d3b;
 }
