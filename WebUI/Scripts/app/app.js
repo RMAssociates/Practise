@@ -61,11 +61,7 @@ function ($routeProvider,$httpProvider) {
         when('/404', {
             templateUrl: '/Templates/home/404.html'
 
-        }).
-        when('/phones/:phoneId', {
-            templateUrl: '/Templates/AboutUs/AboutUs.html',
-            controller: 'PhoneDetailCtrl'
-        }).
+        }).       
           when('/schedule', {
               templateUrl: '/Templates/schedule/schedule.html'
 
@@ -80,6 +76,14 @@ function ($routeProvider,$httpProvider) {
           }).
            when('/services', {
                templateUrl: '/Templates/services/default.html'
+
+           }).
+          when('/services/preventive', {
+              templateUrl: '/Templates/services/preventive.html'
+
+          }).
+           when('/services/teethwhitening', {
+               templateUrl: '/Templates/services/teethwhitening.html'
 
            }).
            when('/contactus', {

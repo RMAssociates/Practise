@@ -23,19 +23,33 @@ dentalControllers.controller('CarouselDemoCtrl', function ($scope) {
         var newWidth = 600 + slides.length + 1;
         slides.push({
             image: '/Images/examining.jpg',
-            text: 'Doctor Examining a Patient',
-            name:'Preventive Checkups'
+            heading:' Regular Check-Ups are Important',
+            text: ['Help detect issues at an early stage',
+            'Better oral health. ',
+            'kyu kyu kyu. ',
+            'why why why '],
+            name: 'Preventive Checkups',
+            path: '/services/preventive'
         
         });
         slides.push({
             image: '/Images/Whitening.jpg',
-            text: 'Improve your smile',
-            name : 'Whitening'
+            heading: ' Improve your smile',
+            text: ['',
+            ' ',
+            'kyu kyu kyu. ',
+            'why why why '],
+            name: 'Whitening',
+            path: '/services/teethwhitening'
 
         });
         slides.push({
             image: '/Images/family.jpg',
-            text: 'Complete Family packages available...',
+            heading: ' Family Plans Available',
+            text: ['',
+            ' ',
+            'kyu kyu kyu. ',
+            'why why why '],
             name :'Family'
 
         });
