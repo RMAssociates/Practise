@@ -1361,6 +1361,12 @@ a.text-success:hover {
 .text-info {
   color: #31708f;
 }
+.text-cursive {
+  font-family:cursive;
+  color: #3c763d;
+  margin-top:15px;
+}
+
 a.text-info:hover {
   color: #245269;
 }
@@ -6595,6 +6601,7 @@ button.close {
 }
 
 body { padding-top: 150px;
+       padding-bottom: 50px;
       
 }
 
@@ -6606,5 +6613,17 @@ body { padding-top: 150px;
 .row.equal{
   overflow: hidden; 
 }
+.margin-top-35{
+    margin-top:35px;
+}
+.fixed-max-height-350 {
+    max-height:350px;
+}
+@media (max-width: 767px) {
+    body{font-size: 10px;}
+}
 
+@media (max-width: 997px) {
+    body{font-size: 14px;}
+}
 /*# sourceMappingURL=bootstrap.css.map */
