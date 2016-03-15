@@ -1,89 +1,20 @@
 ﻿
-
-/*-----------------------------------*\
-  $OBJECTS
-\*-----------------------------------*/
-
-/*.butt, .input {
-  padding: .75rem;
-  margin: .375rem;
-
-  background-color: transparent;
-  border-radius: 4px;
+.fixed-max-height-350 {
+    max-height:350px;
 }
-
-  .butt:focus, .input:focus {
-    outline: none;
-  }
-
-.butt {
-  border: 2px solid #f35626;
-  line-height: 1.375;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-
-  font-weight: 700;
-
-  color: #f35626;
-
-  cursor: pointer;
-  -webkit-animation: hue 60s infinite linear;
+.fixed-height-250 {
+    height:250px;
 }
-
-  .butt--primary {
-    background-color: #f35626;
-    color: #fff;
-  }
-
-.input {
-  border: 1px solid #c0c8c9;
-  border-radius: 4px;
+.text-information{
+    padding:15px;
+    font-size:medium
 }
-
-  .input--dropdown {
-    background-image: url("images/ddown.png");
-    background-image: url("images/ddown.svg?3"), none;
-    background-repeat: no-repeat;
-    background-size: 1.5rem 1rem;
-    background-position: right center;
-  }*/
-
-/*-----------------------------------*\
-  $TYPOGRAPHY
-\*-----------------------------------*/
-
-/*h1, .alpha {
-  margin-bottom: 1.5rem;
-
-  font-size: 3rem;
-  font-weight: 100;
-  line-height: 1;
-  letter-spacing: -.05em;
+.text-carousel{
+   padding:5px;
+   color:#445E7F;
+   font-size:medium;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-h2, .beta {
-  margin-bottom: .75rem;
-
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1;
-}
-
-@media (min-width: 650px) {
-  .mega {
-    font-size: 6rem;
-    line-height: 1;
-  }
-}
-
-.subhead, .meta {
-  color: #7b8993;
-}
-
-.promo {
-  text-align: center;
-}
-
 p, hr, form {
   margin-bottom: 1.5rem;
 }
@@ -156,11 +87,9 @@ a {
   }
 
   .box_animated {
-    
-    background-color: lightslategray;    
     -webkit-animation: hue 8s infinite linear;
     animation-name: hue;
-    animation-duration: 8s;
+    animation-duration: 4s;
 }
 
 /*-----------------------------------*\

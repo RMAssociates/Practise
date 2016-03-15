@@ -16,11 +16,11 @@ dentalControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams',
   }]);
 
 dentalControllers.controller('CarouselDemoCtrl', function ($scope) {
-    $scope.myInterval = 9000;
+    $scope.myInterval = 5000;
     var slides = $scope.slides = [];
 
     $scope.addSlide = function () {
-        var newWidth = 600 + slides.length + 1;
+      //  var newWidth = 600 + slides.length + 1;
         slides.push({
             image: '/Images/examining.jpg',
             heading:' Regular Check-Ups are Important',
